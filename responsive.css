@@ -1,0 +1,218 @@
+/* Pro mobilní zařízení */
+@media (max-width: 768px) {
+
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-menu li {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .active {
+        color: #f8b400;
+    }
+
+    #introduction {
+        padding: 30px 15px;
+    }
+
+    #offer .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #welcome h1 {
+        font-size: 2rem;
+    }
+
+    #offer-content {
+        text-align: center; /* Zarovnání celého obsahu */
+        display: flex;
+        flex-direction: column; /* Hlavní směr: sloupec */
+        align-items: center;
+    }
+    
+    #offer-content h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Větší mezera mezi nadpisem a boxy */
+    }
+    
+    #offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    /* Položky pod sebou na mobilu */
+    .item {
+        width: 90%; /* Na mobilu téměř celá šířka */
+        max-width: 400px; /* Maximální šířka */
+        text-align: center;
+        padding: 20px;
+    }
+    
+
+     /* Tabulka */
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: black;
+        color: turquoise;
+    }
+
+    td a.btn {
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: turquoise;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+
+    /* Obrázky */
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+        flex-wrap: wrap; /* Přidáno pro zalomení při zmenšení */
+    }
+    
+    /* Obrázky ve výchozím stavu */
+    .container img {
+        width: 30%;
+    }
+    /* Video */
+    #video {
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* O nás */
+    .about h1 {
+        margin: 0 auto; /* Použijte auto pro vycentrování */
+        padding: 0 5%; /* Nastavení menších okrajů */
+        font-size: 1.8rem;
+        text-align: center;
+        width: 90%; /* Ujistěte se, že šířka je přizpůsobena */
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .about p {
+        margin: 0 auto; /* Použijte auto pro vycentrování */
+        padding: 0 5%; /* Nastavení menších okrajů */
+        font-size: 16px;
+        text-align: justify;
+        width: 90%; /* Ujistěte se, že šířka je přizpůsobena */
+    }
+
+    /* blog */
+    .page-4 .text, .page-4 .obsah {
+        margin: 0 auto; /* Použijte auto pro vycentrování */
+        padding: 0 5%; /* Nastavení menších okrajů */
+        font-size: 16px;
+        text-align: justify;
+        width: 90%; /* Ujistěte se, že šířka je přizpůsobena */
+    }
+
+    .page-4 h2 {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: turquoise;
+        width: 90%;
+    }
+
+    .page-4 .container {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }	
+    
+/* Na mobilech zobrazit obrázky pod sebou */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Zarovná obrázky na střed */
+    }
+
+    .container img {
+        width: 80%; /* Šířka obrázku pro mobilní zobrazení */
+    }
+}
+
+/* Responzivita pro menší obrazovky */
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-menu li {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+    
+    .btn {
+        font-size: 1rem;
+    }
+}
+}
+
+
+/* Když je burger menu kliknuto */
+@media (max-width: 768px) {
+    #nav-menu.active {
+        display: flex;
+    }
+}

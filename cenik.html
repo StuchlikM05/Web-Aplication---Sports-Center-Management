@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronájem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/png" href="img/logo.svg?v=2">
+</head>
+<body class="page-3">
+        <header>
+            <div id="nav">
+                <p><a href="index.html"><img src="img/logo.svg?v=2" alt="logo"></a></p>
+                <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="viceinf.html">O nás</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="active" href="cenik.html">Ceník</a></li>
+                    <li><a href="rezervace.php">Rezervace</a></li>
+                </ul>
+            </div>
+        </header>
+            <table>
+                <tr>
+                    <th>Služba</th>
+                    <th>Cena (Kč/hod)</th>
+                    <th>Rezervace</th>
+                </tr>
+                <tr>
+                    <td>Fitness</td>
+                    <td>200</td>
+                    <td class="rezervace"><a href="rezervace.php?id=1" class="btn">Rezervovat</a></td>
+                </tr>
+                <tr>
+                    <td>Kardio zóna</td>
+                    <td>180</td>
+                    <td class="rezervace"><a href="rezervace.php?id=2" class="btn">Rezervovat</a></td>
+                </tr>
+                <tr>
+                    <td>Bazén</td>
+                    <td>300</td>
+                    <td class="rezervace"><a href="rezervace.php?id=3" class="btn">Rezervovat</a></td>
+                </tr>
+                <tr>
+                    <td>Wellness</td>
+                    <td>400</td>
+                    <td class="rezervace"><a href="rezervace.php?id=4" class="btn">Rezervovat</a></td>
+                </tr>
+                <tr>
+                    <td>Sportovní hala</td>
+                    <td>500</td>
+                    <td class="rezervace"><a href="rezervace.php?id=5" class="btn">Rezervovat</a></td>
+                </tr>
+                <tr>
+                    <td>Skupinové lekce</td>
+                    <td>250</td>
+                    <td class="rezervace"><a href="rezervace.php?id=6" class="btn">Rezervovat</a></td>
+                </tr>
+            </table>
+
+
+    <footer>
+        <p>Jedná se o fiktivní projekt pro závěrečnou maturitní práci.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>  
+</html>

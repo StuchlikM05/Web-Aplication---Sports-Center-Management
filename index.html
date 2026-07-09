@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/png" href="img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Centrum Sportem ke Zdraví</title>
+</head>
+<body class="page-1">
+    <header>
+        <div id="nav">
+            <p><a href="index.html"><img src="img/logo.svg" alt=""></a></p>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-menu">
+                <li><a class="active" href="index.html">Úvod</a></li>
+                <li><a href="viceinf.html">O nás</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cenik.html">Ceník</a></li>
+                <li><a href="rezervace.php">Rezervace</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <div id="welcome-content">
+                <h1>Vítejte na stránce Sportem ke Zdraví!</h1>
+            </div>
+        </section>
+        <div id="introduction">
+            <div id="introduction-content" class="container">
+                <p>Naše sportovní centrum nabízí širokou škálu aktivit pro všechny věkové kategorie. Přijďte si zacvičit, zlepšit kondici a užít si pohyb v přátelském prostředí!</p>
+            </div>
+            <div id="introduction-buttons">
+                <a class="btn" href="viceinf.html">Dozvědět se více</a>
+                <a class="btn" href="rezervace.php">Rezervace</a>
+            </div>
+        </div>
+
+        <div id="offer">
+            <div id="offer-content" class="container">
+                <h2>Naše služby</h2>
+                <div id="offers">
+                    <div class="item">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <h3>Fitness</h3>
+                        <p>Moderní posilovna s profesionálním vybavením pro začátečníky i pokročilé.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-running fa-2x"></i>
+                        <h3>Kardio zóna</h3>
+                        <p>Vybavená běžeckými pásy, rotopedy a eliptickými trenažéry.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-swimmer fa-2x"></i>
+                        <h3>Bazén</h3>
+                        <p>25metrový bazén pro rekreační i sportovní plavání.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-spa fa-2x"></i>
+                        <h3>Wellness</h3>
+                        <p>Sauna, vířivka a relaxační masáže pro dokonalý odpočinek.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-basketball-ball fa-2x"></i>
+                        <h3>Sportovní hala</h3>
+                        <p>Prostor pro míčové sporty jako basketbal, volejbal a futsal.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Skupinové lekce</h3>
+                        <p>Jóga, pilates, spinning a další aktivity s kvalifikovanými trenéry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Jedná se o fiktivní projekt pro závěrečnou maturitní práci.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

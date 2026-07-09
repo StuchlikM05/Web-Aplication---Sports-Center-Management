@@ -1,0 +1,464 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility */
+:root {
+    --primary: turquoise;
+    --container-width: 30%;
+    --container-height: 200px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}   
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.btn {
+    text-align: center;
+    margin: 0 6px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 1.3em;
+    background-color: var(--primary);
+    color: white;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: turquoise;
+}
+
+.btn.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    object-fit: scale-down !important;
+    width: auto;
+    height: 100%;
+}
+
+/*Burger menu*/
+.burger-menu {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Posune burger doprava */
+    top: 15px;
+    color: white;
+    z-index: 1000; /* Aby bylo nad ostatními prvky */
+}
+
+/* Header Section */
+#nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    padding: 1em;
+    z-index: 100;
+}
+#nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+#nav-menu li {
+    padding: 0 15px;
+}
+
+#nav-menu li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#nav-menu li a.active,
+#nav-menu li a:hover {
+    color: var(--primary);
+}
+
+
+/* Welcome Section */
+#welcome {
+    background: url("img/sunset.jpg") no-repeat center center/cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Introduction */
+#introduction {
+    background-color: #282828;
+    padding: 4% 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#introduction-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Offer Section */
+#offer {
+    background-color: white;
+    padding: 4% 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.item i {
+    font-size: 2em;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+
+/***************** viceinfo *****************/
+
+.about {
+    overflow-x: hidden; /* Skryta­ scrollbaru */
+    overflow-y: hidden
+}
+
+.about h1 {
+    display: block;
+    margin: 3em 0 1em 0;
+    font-size: 2.2em;
+    text-align: center;
+    color: turquoise;
+    font-weight: bold;
+}
+
+.about p {
+    margin: 0 20%;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.page-2 .container {
+    display: flex;
+    justify-content: space-between; /* Rovnoměrně rozprostře obrázky */
+    margin-top: 20px;
+    align-items: center;
+}
+.page-2 .container img {
+    width: 320px ; /* Šířka obrázku */
+    height: auto; /* Výška se přizpůsobí poměru stran obrázku */
+    border: 5px solid #000; /* Rámeček černé barvy a tloušťky 5px */
+    box-sizing: border-box; /* Zajistí, že padding a border neovlivní velikost obrázku */
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/***************** Ceník *****************/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5%;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+tr:nth-child(even) td#rezervace{
+    background-color: whitesmoke; 
+}
+
+tr:nth-child(even){
+    background-color: whitesmoke; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    max-width: 20%;
+}
+
+#rezervace {
+    background-color: white;
+    color: turquoise;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 100px;
+}
+
+
+
+th {
+    background-color: black;
+    color: turquoise;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+#footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+/***************** Blog *****************/
+
+.page-4 h2{
+    color: turquoise;
+    margin: 0 20%;
+    font-size: 1.7em;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    scroll-margin-top: 70px; /* Uprav hodnotu podle výšky navigace */
+}
+
+.page-4 .text  {
+    margin: 0 20%;
+    font-size: 1.1em;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.page-4 .obsah {
+    margin: 0 21%;
+    font-size: 1.2em;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.page-4 .container {
+    display: flex;
+    justify-content: center ;
+    width: 300px ; /* Šířka obrázku */
+    height: 300px; /* Výška se přizpůsobí poměru stran obrázku */
+    margin-top: 20px;
+}
+
+#zaver {
+    display: flex;
+    justify-content: center;
+}
+
+    
+
+/***************** Rezervace *****************/
+/* Form */
+
+#reservation-form {
+    flex: 1; /* Rezervace vyplní volný prostor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#reservation-content {
+    font-size: 1.2em;   
+    overflow-y: hidden; /* SkrytĂ­ scrollbaru */
+}
+
+#reservation-content #form {
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #e9e9e9;
+}
+
+#reservation-form h1 {
+    margin: 3em 0 1em 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#reservation-content form {
+    width: 60%;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+#reservation-content form input {
+    margin: 1em 0;
+    width: 100%;
+    height: 5vh;
+}
+
+#reservation-content form textarea {
+    margin: 1em 0;
+    width: 100%;
+    height: 10vh;
+}
+
+#reservation-content form div#room {
+    font-size: 1em;
+    text-align: left;
+    margin: 1em 0;
+}
+
+#reservation-content form select {
+    width: 100%;
+    height: 5vh;
+    cursor: pointer;
+}
+
+#reservation-content form input[type="submit"] {
+    font-size: 1em;
+    margin: 1em 0;
+    width: 5.5em;
+    height: 1.9em;
+    cursor: pointer;
+}
+/*****************dekujeme*****************/
+
+#page-6 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#thank-you {
+    text-align: center; /* Horizontální zarovnání textu */
+    width: 100%; /* Přizpůsobí se šířce obrazovky */
+    margin-top: 150px;
+    font-size: 2rem;
+}
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Posune footer dolů */
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) { 
+    .burger-menu {
+        display: block;
+    }
+
+    #nav {
+        position: relative;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        width: 200px;
+        text-align: center;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    #nav-menu li {
+        margin: 10px 0;
+    }
+
+    #nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 5%;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+}
+
+
+
